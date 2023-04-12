@@ -1,0 +1,67 @@
+
+What is webservice?
+
+Distributed computing is the starting point for webservices
+Websites---for humans
+Webservices-- for another applications
+
+Homogeneous applications can communicate using RMI/RPC
+Share price application and Financial services application both are Java based
+They interact each other using RMI .
+Hetrogenous applications communicate through CORBA
+
+Applications expose their functionalities as service and other applications can consume it.
+Webservices are used to expose the functionalities as services.
+
+Need of webservice
+It is for application to application communication
+Webservices improves reusablility.
+
+Types of webservice
+
+Client and webservices share data as XML . 
+
+SOAP(Simple Object Access Protocol) is a webservice based on XML
+
+RESTful webservices are developed on top of HTTP protocol
+
+What is RESTfull webservice
+Everything is treated as resource.
+Each resource is identified using URL--endpoint url.
+RE---Representational
+S-State
+T-Transfer
+
+RESTfull webservice transfer the state of a resource in a representation expected by the client.
+
+A RESTful webservice finds the expectation of a client by checking the Accept header of the http request.
+
+Http Request and Response
+
+Accept type and Content type headers
+
+Different Representation formats
+
+JSON format
+{
+"employee": {
+"name": "sonoo",
+"salary": 56000,
+"married": true.
+}
+}
+Spring support for RESTfull webservice
+
+Spring MVC
+
+@RestController
+Controllers
+
+@RequestMapping
+methods
+
+Message converters are used to convert the output of Spring webservice into different representaions.
+MappingJackson2HttpMessageConverter used to convert java objects from Spring REST webservice to JSON object.
+
+
+
